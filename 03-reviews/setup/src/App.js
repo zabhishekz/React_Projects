@@ -4,10 +4,15 @@ import { FaGithubSquare } from "react-icons/fa";
 
 function App() {
   return (
-    <h2>
-      reviews project setup
-      <FaGithubSquare className="icon" />
-    </h2>
+    <main>
+      <section className="container">
+        <div className="title">
+          <h2>Our reviews</h2>
+          <div className="underline"></div>
+        </div>
+        <Review />
+      </section>
+    </main>
   );
 }
 
