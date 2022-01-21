@@ -12,7 +12,6 @@ function App() {
           {questions.map((question) => {
             return <SingleQuestion key={question.id} {...question} />;
           })}
-          ;
         </section>
       </div>
     </main>
