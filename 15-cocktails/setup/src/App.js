@@ -11,19 +11,20 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch />
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route exact path="/about">
-        <About />
-      </Route>
-      <Route exact path="/cocktail/:id">
-        <SingleCocktail />
-      </Route>
-      <Route exact path="*">
-        <Error />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/cocktail/:id">
+          <SingleCocktail />
+        </Route>
+        <Route path="*">
+          <Error />
+        </Route>
+      </Switch>
     </Router>
   );
 }
